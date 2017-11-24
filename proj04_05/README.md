@@ -1,4 +1,3 @@
-# Main Project 
 ## **Halucination for face from surveillance camera**
 
 ### **Main Idea**
