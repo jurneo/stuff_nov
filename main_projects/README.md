@@ -1,38 +1,25 @@
-## **Halucination for face from surveillance camera**
+## **Face hallucination**
 
-### **Main Idea**
+The idea of the project is to investigate how deep learning can solve problem of face hallucination. The topic of this work was early investigated in 1999 by Baker and Kanade et al.
 
-- We have image scene captured from typical surveillance camera,
+From Wikipedia, face hallucination refers to any superresolution technique which applies specifically to faces. It comprises techniques which take noisy or low-resolution facial images, and convert them into high-resolution images using knowledge about typical facial features.
 
-- There is person(s) of interest in the captured image
-
-- The face of the person of interest does not have enough details or some details of the face parts are not good enough.
-
-- We use super-resolution technique to improve the details
-
-Therefore for this project we split into two parts: the first part has to do making a robust face detection using person detection (SSD method), and second part make use of the result from the first part to do face hallucination.
+This project explore the recent work of super-resolution method with deep learning to do face hallucination.
 
 ### **Dataset**
 
-For the first part we use pre-trained model of inception, and the second part we use celeb-dataset and combined with dataset from cocos. 
+For training and evaluation, the training dataset is from  [**CelebA**](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset from Liu et al. (CUHK).
 
-### **Checklist**
+### **Extended Part**
 
-1. Image Hallucination
+The second part of the project is to put this technique into a typical scenario of a scene from camera surveillance scene. 
 
-    input : image low-res
+To link up to our face hallucination of the first part of the project, we need to be able to detect the person and then the face (or the face directly) in the scene.
 
-    output : image high-res
+And, then preprocess them to be ready as the input to our face hallucination model for inference.
 
-2. Person Detection
+For face detection, in this part the object detection from tensorflow model is used for training and detection. 
 
-3. Object Detection
+The object detection method is based on SSD method.
 
-### **TODO list**
-
-- Test the train weight from my test, and compared them with what Sam has done in his example, and figure out the next step on this part.
-
-- Test TensorFlow object detection API and see if we can run it on my machine
-
-- Link up with face-detection from Dlib and see if they are sufficient for my purpose.
-
+https://1drv.ms/u/s!ArIKNjDOB13ch3EacToq2ZKle8Pn
