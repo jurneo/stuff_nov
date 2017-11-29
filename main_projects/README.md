@@ -16,6 +16,6 @@ The second part of the project is to put this technique into a typical scenario 
 
 To link up to our face hallucination of the first part of the project, we need to be able to detect the person and then the face (or the face directly) in the scene. And, then preprocess them to be ready as the input to our face hallucination model for inference. 
 
-For face detection, the objection detection technology using deep learning is selected. Specifically, I explore Retina-Net object by [Tsung-Yi Lin et al](https://arxiv.org/abs/1708.02002) implemented in by [Fizyr](https://github.com/fizyr/keras-retinanet)
+For face detection, the objection detection technology using deep learning is selected. Specifically, I explore Retina-Net object by [Tsung-Yi Lin et al](https://arxiv.org/abs/1708.02002) implemented in by [**Fizyr**](https://github.com/fizyr/keras-retinanet)
 
-The face dataset and its bounding box information is based on [FDDB](http://vis-www.cs.umass.edu/fddb/) dataset. The processed version is available at this [link](https://1drv.ms/u/s!ArIKNjDOB13ch3PjK46p7jWBHvq0). 
+The face dataset and its bounding box information is based on [**FDDB**](http://vis-www.cs.umass.edu/fddb/) dataset. The processed version is available at this [link](https://1drv.ms/u/s!ArIKNjDOB13ch3PjK46p7jWBHvq0). 
